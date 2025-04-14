@@ -1,0 +1,11 @@
+<h1 class="catTitle text-center mt-5">Categories</h1>
+<div class="d-flex flex-wrap justify-content-center mt-5">
+@for(category of categories ; track $index){
+    <div class="card" style="width: 18rem;">
+        <img [src]="category.image" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2 class="card-text">{{category.price}} $</h2>
+        </div>
+    </div>
+}
+</div>
