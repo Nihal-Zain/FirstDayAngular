@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem; margin: 10px;">
+    <img [src]="product.image" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">{{ product.productName }}</h5>
+    <p class="card-text">
+    Price: ${{ product.productPrice }} <br>
+    @if(product.onSale){
+        <span style="color: red;">On Sale!</span>
+    }
+    </p>
+    </div>
+</div>
+
+      
